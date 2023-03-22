@@ -104,22 +104,44 @@ a {text-decoration: none;}
     text-transform: uppercase;
 }
 
-.page {
+.page-studio {
     color: var(--title-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    
 }
 
-.page:hover{
-   color: var(--brand-color);
+.page{
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    position: relative;
 }
 
+.studio::after{
+  content: "";
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  display: block;
+  background-color: var(--brand-color);
+  border-radius: 2px;
+  transition: var(--curent-color);
+  position: relative;
+  top: 20px;
+}
+
+
+.page:hover,
 .page:focus{
    color: var(--brand-color);
 }
+
+
 
 .link-address{
     display: flex;
