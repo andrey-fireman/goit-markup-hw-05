@@ -536,7 +536,6 @@ a {text-decoration: none;}
     border-radius: 50%;
     display: block;
     margin-left: auto;
-    
 }
 
 .modal-close{
@@ -771,6 +770,8 @@ a {text-decoration: none;}
 .footer-section{
     padding: 100px 0;
     display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .link-footer{
